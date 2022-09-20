@@ -1,0 +1,22 @@
+.team--tabs-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team--tabs-content-summary {
+  width: 35%;
+}
+
+@media screen and (max-width: 912px) {
+  .team--tabs-content-summary {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .team--tabs-content.page-layout {
+    padding: 13rem 2rem 8rem 2rem;
+  }
+}

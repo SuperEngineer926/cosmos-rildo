@@ -1,0 +1,44 @@
+.page-bg-img {
+  width: 100vw !important;
+  height: 100vh;
+  right: 0 !important;
+  bottom: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed !important;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: -2;
+
+  &>span {
+    height: 100% !important;
+    z-index: -1;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .page-bg-img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .page-bg-img {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+
+    &--50 {
+      width: 50%;
+    }
+
+    &--60 {
+      width: 60%;
+    }
+
+    &--70 {
+      width: 70%;
+    }
+  }
+}

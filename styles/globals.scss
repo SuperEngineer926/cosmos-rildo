@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Work+Sans:wght@500;600&display=swap');
+
+@font-face {
+  font-family: 'Maghfirea';
+  font-style: normal;
+  src: local('Maghfirea'), local('Maghfirea'),
+    url('./fonts/misc/Maghfirea-348d.woff') format('woff'), 
+}
+
+/* @components */
+@import '../src/components/arrow-card/arrow-card.scss';
+@import '../src/components/header/header.scss';
+@import '../src/components/shared/page-bg-img/page-bg-img.scss';
+@import '../src/components/shared/tabs/tabs.scss';
+@import '../src/components/shared/teardrop-button/teardrop-button.scss';
+
+/* @pages */
+@import '../src/pages/home/home.scss';
+@import '../src/pages/cosmos/cosmos.scss';
+@import '../src/pages/faq/faq.scss';
+@import '../src/pages/fireside/fireside.scss';
+@import '../src/pages/lore/lore.scss';
+@import '../src/pages/mint/mint.scss';
+@import '../src/pages/team/team.scss';
+
+html,
+body {
+  min-height: 100vh;
+  min-height: stretch;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 0;
+  // font-family: 'Work Sans', sans-serif;
+  font-family: 'Maghfirea';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  letter-spacing: -2px;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.005em;
+}
+
+@media screen and (max-width: 700px) {
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+svg {
+  fill: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-layout {
+  padding: 10rem 5rem 3rem 5rem;
+}
+
+.h-button,
+.f-button {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+  transition: all 0.6s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .page-layout {
+    padding: 9rem 2rem 3rem 2rem;
+  }
+}

@@ -1,0 +1,18 @@
+@import './arrow/arrow.scss';
+
+.arrow-card {
+  position: relative;
+
+  & .arrow--active {
+    display: none;
+  }
+}
+
+.arrow-card:hover {
+  & .arrow--inactive {
+    display: none;
+  }
+  & .arrow--active {
+    display: block;
+  }
+}

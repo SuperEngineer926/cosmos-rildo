@@ -1,0 +1,24 @@
+@import './faq-content/faq-content.scss';
+
+.faq {
+  position: absolute;
+  z-index: 1;
+
+  & * {
+    color: #FFFFFF;
+  }
+}
+
+.faq--title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 60px;
+  letter-spacing: -2px;
+}
+
+@media screen and (max-width: 700px) {
+  .faq.page-layout {
+    padding-top: 6rem;
+  }
+}
